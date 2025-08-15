@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('./Images/bg.jpg'); 
+    min-height: 100vh;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    background-color: #f0d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: sticky;
+}
+
+.nav_links, ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.nav_ul, li, a{
+    padding: 0 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main div{
+    width: 100%;
+    height: 68.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button CSS */
+.hire-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #1976d2, #00bcd4);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 2rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
+}
+
+.hire-btn:hover,
+.hire-btn:focus {
+  background: linear-gradient(90deg, #00bcd4, #1976d2);
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
+  outline: none;
+}
+
+
+
+/* Footer CSS */
+.footer {
+  background: linear-gradient(90deg, #1976d2, #00796b);
+  color: #fff;
+  padding: 2rem 0 0.5rem 0;
+  margin-top: 3rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  flex: 1 1 220px;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.footer-social {
+  flex: 1 1 120px;
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social a img {
+  transition: transform 0.2s;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.15);
+}
+
+.footer-links {
+  flex: 1 1 200px;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #cfd8dc;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    justify-content: flex-start;
+  }
+}
